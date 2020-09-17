@@ -56,14 +56,14 @@ table {
   font-weight: bold;
 }
 @font-face {
-  font-family: "OpenSans";
-  src: url("c:/web/toxin/fonts/OpenSans/OpenSans-Regular.woff"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Regular.ttf"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Regular.svg");
+  font-family: "Quicksand";
+  src: url("c:/web/toxin/assets/fonts/Quicksand/Quicksand-Regular.woff"), url("c:/web/toxin/assets/fonts/Quicksand/Quicksand-Regular.ttf"), url("c:/web/toxin/assets/fonts/Quicksand/Quicksand-Regular.svg");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: "OpenSans";
-  src: url("c:/web/toxin/fonts/OpenSans/OpenSans-Bold.woff"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Bold.ttf"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Bold.svg");
+  font-family: "Quicksand";
+  src: url("c:/web/toxin/assets/fonts/Quicksand/Quicksand-Bold.woff"), url("c:/web/toxin/assets/fonts/Quicksand/Quicksand-Bold.ttf"), url("c:/web/toxin/assets/fonts/Quicksand/Quicksand-Bold.svg");
   font-style: normal;
   font-weight: bold;
 }

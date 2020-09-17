@@ -1,18 +1,18 @@
 @import "link-to-root";
 
 @font-face {
-  font-family: 'QuickSand';
-  src: url($root + '/fonts/QuickSand/QuickSand-Regular.woff'),
-       url($root + '/fonts/QuickSand/QuickSand-Regular.ttf'),
-       url($root + '/fonts/QuickSand/QuickSand-Regular.svg');
+  font-family: 'Quicksand';
+  src: url($root + '/assets/fonts/Quicksand/Quicksand-Regular.woff'),
+       url($root + '/assets/fonts/Quicksand/Quicksand-Regular.ttf'),
+       url($root + '/assets/fonts/Quicksand/Quicksand-Regular.svg');
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: 'OpenSans';
-  src: url($root + '/fonts/QuickSand/OuickSand-Bold.woff'),
-       url($root + '/fonts/QuickSand/OuickSand-Bold.ttf'),
-       url($root + '/fonts/QuickSand/OuickSand-Bold.svg');
+  font-family: 'Quicksand';
+  src: url($root + '/assets/fonts/Quicksand/Quicksand-Bold.woff'),
+       url($root + '/assets/fonts/Quicksand/Quicksand-Bold.ttf'),
+       url($root + '/assets/fonts/Quicksand/Quicksand-Bold.svg');
   font-style: normal;
   font-weight: bold;
 }
