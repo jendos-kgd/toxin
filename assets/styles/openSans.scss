@@ -1,0 +1,18 @@
+@import "link-to-root";
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url($root + '/fonts/OpenSans/OpenSans-Regular.woff'),
+       url($root + '/fonts/OpenSans/OpenSans-Regular.ttf'),
+       url($root + '/fonts/OpenSans/OpenSans-Regular.svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url($root + '/fonts/OpenSans/OpenSans-Bold.woff'),
+       url($root + '/fonts/OpenSans/OpenSans-Bold.ttf'),
+       url($root + '/fonts/OpenSans/OpenSans-Bold.svg');
+  font-style: normal;
+  font-weight: bold;
+}

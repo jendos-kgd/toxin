@@ -1,0 +1,127 @@
+@import '../../assets/styles/reset';
+@import '../../assets/styles/montserrat';
+@import '../../assets/styles/openSans';
+@import '../../assets/styles/variables';
+
+body {
+  max-width: 1440px;
+  min-height: 900px;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.main-container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 145px;
+  margin-left: 150px;
+}
+.color_container {
+  width: 270px;
+  height: 630px;
+  .color-block {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    p {
+      font: $fontH2;
+    }
+    .color-block__example {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .color-block__name {
+      display: inline-block;
+      line-height: 29px;
+      position: absolute;
+      left: 110px;
+      top: 10px;
+    }
+    .color-block__code {
+      font-weight: normal;
+      line-height: 29px;
+      position: absolute;
+      left: 110px;
+      top: 39px;
+    }
+  }
+}
+#dark100 {
+  background-color: $dark100;
+}
+#dark75 {
+  background-color: $dark75;
+}
+#dark50 {
+  background-color: $dark75;
+}
+#dark25 {
+  background-color: $dark25;
+}
+#dark05 {
+  background-color: $dark5;
+}
+#purple {
+  background-color: $purple;
+}
+#green {
+  background-color: $green;
+}
+.type-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  p {
+    color: $dark25;
+    font-family: $mainFont;
+  }
+  .type-tags {
+    margin-right: 30px;
+    p {
+      text-align: right;
+    }
+    .type-tags__h1 {
+      font-family: $mainFont;
+      font-size: 24px;
+      margin-top: 2px;
+      margin-bottom: 87px;
+    }
+    .type-tags__h2 {
+      font-family: $mainFont;
+      font-size: 19px;
+      margin-bottom: 77px;
+    }
+    .type-tags__h3 {
+      font-family: $mainFont;
+      font-size: 12px;
+      margin-bottom: 56px;
+    }
+  }
+  .type-example {
+    p {
+      margin-bottom: 50px;
+      max-width: 342px;
+      color: $dark100;
+    }
+    .type-example__h1 {
+      font: $fontH1;
+    }
+    .type-example__h2 {
+      font: $fontH2;
+    }
+    .type-example__h3 {
+      font: $fontH3;
+    }
+    .type-example__body {
+      font: $fontBody;
+      color: $dark75;
+      max-width: 301px;
+    }
+  }
+}

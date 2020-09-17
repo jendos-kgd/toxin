@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Regular.woff"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Regular.ttf"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Regular.svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Bold.woff"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Bold.ttf"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Bold.svg");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("c:/web/toxin/fonts/OpenSans/OpenSans-Regular.woff"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Regular.ttf"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Regular.svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("c:/web/toxin/fonts/OpenSans/OpenSans-Bold.woff"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Bold.ttf"), url("c:/web/toxin/fonts/OpenSans/OpenSans-Bold.svg");
+  font-style: normal;
+  font-weight: bold;
+}
+body {
+  max-width: 1440px;
+  min-height: 900px;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.main-container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 145px;
+  margin-left: 150px;
+}
+
+.color_container {
+  width: 270px;
+  height: 630px;
+}
+.color_container .color-block {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.color_container .color-block p {
+  font: normal bold 19px/24px Quicksand, sans-serif;
+}
+.color_container .color-block .color-block__example {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.color_container .color-block .color-block__name {
+  display: inline-block;
+  line-height: 29px;
+  position: absolute;
+  left: 110px;
+  top: 10px;
+}
+.color_container .color-block .color-block__code {
+  font-weight: normal;
+  line-height: 29px;
+  position: absolute;
+  left: 110px;
+  top: 39px;
+}
+
+#dark100 {
+  background-color: #1F2041;
+}
+
+#dark75 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+
+#dark50 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+
+#dark25 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+
+#dark05 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+
+#purple {
+  background-color: #BC9CFF;
+}
+
+#green {
+  background-color: #6FCF97;
+}
+
+.type-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.type-container p {
+  color: rgba(31, 32, 65, 0.25);
+  font-family: "Montserrat", sans-serif;
+}
+.type-container .type-tags {
+  margin-right: 30px;
+}
+.type-container .type-tags p {
+  text-align: right;
+}
+.type-container .type-tags .type-tags__h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-top: 2px;
+  margin-bottom: 87px;
+}
+.type-container .type-tags .type-tags__h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  margin-bottom: 77px;
+}
+.type-container .type-tags .type-tags__h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-bottom: 56px;
+}
+.type-container .type-example p {
+  margin-bottom: 50px;
+  max-width: 342px;
+  color: #1F2041;
+}
+.type-container .type-example .type-example__h1 {
+  font: normal bold 24px/30px Quicksand, sans-serif;
+}
+.type-container .type-example .type-example__h2 {
+  font: normal bold 19px/24px Quicksand, sans-serif;
+}
+.type-container .type-example .type-example__h3 {
+  font: normal bold 12px/15px Montserrat, sans-serif;
+}
+.type-container .type-example .type-example__body {
+  font: normal normal 14px/24px Montserrat, sans-serif;
+  color: rgba(31, 32, 65, 0.75);
+  max-width: 301px;
+}
+
+/*# sourceMappingURL=colors-type-style.css.map */
