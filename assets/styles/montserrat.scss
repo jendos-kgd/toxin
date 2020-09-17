@@ -1,0 +1,19 @@
+@import "link-to-root";
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url($root + '/assets/fonts/Montserrat/Montserrat-Regular.woff'),
+       url($root + '/assets/fonts/Montserrat/Montserrat-Regular.ttf'),
+       url($root + '/assets/fonts/Montserrat/Montserrat-Regular.svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url($root + '/assets/fonts/Montserrat/Montserrat-Bold.woff'),
+       url($root + '/assets/fonts/Montserrat/Montserrat-Bold.ttf'),
+       url($root + '/assets/fonts/Montserrat/Montserrat-Bold.svg');
+  font-style: normal;
+  font-weight: bold;
+}
