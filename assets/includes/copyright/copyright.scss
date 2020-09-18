@@ -1,0 +1,47 @@
+@import "../../styles/link-to-root";
+@import "../../styles/reset";
+@import '../../styles/variables';
+@import '../../styles/montserrat';
+
+.copyright-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 140px;
+  max-width: 1160px;
+  height: 70px;
+  box-sizing: border-box;
+  border-top: 1px solid $dark10;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.copyright {
+  font: $mainFont;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 23px;
+  color: $dark75;
+}
+.social-links {
+  margin-top: 23px;
+  .social-links__item {
+    display: inline-block;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .social-links__link {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url($root + '/assets/icons/sprite-social.png');
+    }
+  }
+  #facebook {
+    background-position: center;
+  }
+  #instagram {
+    background-position: right;
+  }
+}
