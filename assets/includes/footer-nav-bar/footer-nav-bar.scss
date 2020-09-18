@@ -1,0 +1,64 @@
+@import "../../styles/link-to-root";
+@import "../../styles/reset";
+@import '../../styles/variables';
+@import '../../styles/montserrat';
+
+
+.footer-nav-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 860px;
+  li{
+    margin-bottom: 20px;
+    a:hover {
+      color: #BC9CFF;
+    }
+  }
+  .footer-nav {
+    font-family: $mainFont;
+    .footer-nav-header{
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: bold;
+      color: $dark100;
+      margin-bottom: 21px;
+    }
+    .footer-nav__item {
+      font-size: 14px;
+      line-height: 17px;
+      color: $dark50;
+      max-width: 260px;
+    }
+  }
+  .email-form {
+    position: relative;
+    .email-form__input {
+      box-sizing: border-box;
+      width: 260px;
+      height: 44px;
+      background: #FFFFFF;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 4px;
+      padding-left: 15px;
+      outline: none;
+      &::-moz-placeholder { color: $dark25; };
+      &::-webkit-input-placeholder {color: $dark25;};
+    }
+    .email-form__btn {
+      background: url($root + '/assets/icons/arrow-forward.png'),
+                  rgba(0,0,0,0);
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      outline: none;
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top:0;
+      right: 0;
+    }
+  }
+
+  }
