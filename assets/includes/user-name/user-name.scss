@@ -1,0 +1,15 @@
+@import "../../styles/link-to-root";
+@import "../../styles/reset";
+@import '../../styles/variables';
+@import '../../styles/montserrat';
+
+
+.user-name {
+  font-family: $mainFont;
+  font-size: 14px;
+  color: $dark50;
+  border-left: 1px solid $dark10;
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+}
