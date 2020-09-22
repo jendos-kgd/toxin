@@ -1,0 +1,25 @@
+@import "../../styles/link-to-root";
+@import "../../styles/reset";
+@import '../../styles/variables';
+@import '../../styles/montserrat';
+
+
+.text-field {
+  width: 320px;
+  height: 44px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid $dark25;
+  padding-left: 15px;
+  vertical-align: middle;
+  font-family: $mainFont;
+  font-size: 14px;
+  color: $dark25;
+  &::placeholder {
+    color: $dark25;
+  }
+  &:focus, &:hover {
+    border: 1px solid $dark50;
+    color: $dark75;
+  }
+}

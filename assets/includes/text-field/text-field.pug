@@ -1,0 +1,9 @@
+link(rel="stylesheet", href="text-field.css")
+
+mixin text-field(type, placeholder)
+  form(action="#")
+    input(type=type class="text-field" placeholder=placeholder)
+
+
+//- +text-field('email', 'Email')
+//- +text-field('text', 'some text')
