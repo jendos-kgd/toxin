@@ -1,0 +1,27 @@
+link(rel="stylesheet" href="dropdown.css")
+  
+include ../root-link.pug
+script(src= rootLink + "/jquery-3.5.1.min.js")
+script(src= rootLink + "/assets/includes/dropdown/dropdown-guests.js")
+.dropdown__header
+  p.dropdown__data#dropdown-guests__data Сколько гостей
+  img#dropdown-guests__expand(src= rootLink + '/assets/icons/expand-down.png')
+.dropdown__menu.hidden#dropdown-guests__menu 
+  .dropdown__line
+    p.dropdown__item взрослые
+    .dropdown__counter-container
+      img#adult-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
+      p.dropdown__counter#adult-counter 0
+      img#adult-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
+  .dropdown__line
+    p.dropdown__item дети
+    .dropdown__counter-container
+      img#child-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
+      p.dropdown__counter#child-counter 0
+      img#child-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
+  .dropdown__line
+    p.dropdown__item младенцы
+    .dropdown__counter-container
+      img#baby-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
+      p.dropdown__counter#baby-counter 0
+      img#baby-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')

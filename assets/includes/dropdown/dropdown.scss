@@ -20,7 +20,7 @@
   &:focus, &:hover {
     border-color: $dark50;
   }
-  #dropdown__expand {
+  img {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -48,11 +48,6 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0px 7px 7px 15px;
-    #bedroom-delete-btn,
-    #bed-delete-btn,
-    #bath-delete-btn {
-      opacity: 0.38;
-    }
   }
   .dropdown__counter-container {
     width: 92px;
@@ -60,4 +55,13 @@
     justify-content: space-between;
 
   }
+}
+
+#bedroom-delete-btn,
+#bed-delete-btn,
+#bath-delete-btn,
+#adult-delete-btn,
+#child-delete-btn,
+#baby-delete-btn {
+  opacity: 0.38;
 }
