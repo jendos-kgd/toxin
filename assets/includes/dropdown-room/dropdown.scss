@@ -1,0 +1,63 @@
+@import "../../styles/link-to-root";
+@import "../../styles/reset";
+@import '../../styles/variables';
+@import '../../styles/montserrat';
+
+
+.dropdown__header {
+  position: relative;
+  width: 266px;
+  height: 44px;
+  padding-left: 15px;
+  padding-top: 12px;
+  font-family: $mainFont;
+  font-size: 14px;
+  line-height: 24px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border: 1px solid $dark25;
+  color: $dark75;
+  &:focus, &:hover {
+    border-color: $dark50;
+  }
+  #dropdown__expand {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+  }
+}
+.dropdown__menu {
+  width: 266px;
+  height: 119px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid $dark25;
+  border-top: none;
+  position: relative;
+  top: -1px;
+  padding-top: 7px;
+  p {
+    font-family: $mainFont;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    color: $dark100;
+  }
+  .dropdown__line {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0px 7px 7px 15px;
+    #bedroom-delete-btn,
+    #bed-delete-btn,
+    #bath-delete-btn {
+      opacity: 0.38;
+    }
+  }
+  .dropdown__counter-container {
+    width: 92px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
