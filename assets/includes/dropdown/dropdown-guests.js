@@ -15,10 +15,23 @@ function dropdownMenuGuests() {
   })
 }
 
+
 function counterGuests() {
   let adultCounter = 0;
   let childCounter = 0;
   let babyCounter = 0;
+
+  function addDataGuests() {
+    if ((adultCounter + childCounter + babyCounter) == 0) {
+      $('#dropdown-guests__data').html('Сколько гостей');
+    } if ((adultCounter + childCounter + babyCounter) == 1) {
+      $('#dropdown-guests__data').html('1 гость');
+    } if ((adultCounter + childCounter + babyCounter) > 1 && (adultCounter + childCounter + babyCounter) <= 4) {
+      $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    } if ((adultCounter + childCounter + babyCounter) > 4) {
+      $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостей');
+    }
+  }
 
   $('#adult-delete-btn').click(function () {
     if (adultCounter == 0) {
@@ -27,7 +40,7 @@ function counterGuests() {
       adultCounter -= 1;
     }
     $('#adult-counter').html(adultCounter);
-    $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    addDataGuests();
     if (adultCounter == 0) {
       $('#adult-delete-btn').css('opacity', '0.38');
     } else {
@@ -37,7 +50,7 @@ function counterGuests() {
   $('#adult-add-btn').click(function () {
     adultCounter += 1;
     $('#adult-counter').html(adultCounter);
-    $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    addDataGuests();
     if (adultCounter == 0) {
       $('#adult-delete-btn').css('opacity', '0.38');
     } else {
@@ -52,7 +65,7 @@ function counterGuests() {
       childCounter -= 1;
     }
     $('#child-counter').html(childCounter);
-    $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    addDataGuests();
     if (childCounter == 0) {
       $('#child-delete-btn').css('opacity', '0.38');
     } else {
@@ -62,7 +75,7 @@ function counterGuests() {
   $('#child-add-btn').click(function () {
     childCounter += 1;
     $('#child-counter').html(childCounter);
-    $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    addDataGuests();
     if (childCounter == 0) {
       $('#child-delete-btn').css('opacity', '0.38');
     } else {
@@ -77,7 +90,7 @@ function counterGuests() {
       babyCounter -= 1;
     }
     $('#baby-counter').html(babyCounter);
-    $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    addDataGuests();
     if (babyCounter == 0) {
       $('#baby-delete-btn').css('opacity', '0.38');
     } else {
@@ -87,7 +100,7 @@ function counterGuests() {
   $('#baby-add-btn').click(function () {
     babyCounter += 1;
     $('#baby-counter').html(babyCounter);
-    $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+    addDataGuests();
     if (babyCounter == 0) {
       $('#baby-delete-btn').css('opacity', '0.38');
     } else {

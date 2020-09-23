@@ -17,15 +17,22 @@ function counterRoom() {
   let bedroomCounter = 0;
   let bedCounter = 0;
   let bathCounter = 0;
+  let bedroomText = 'спален';
+  let bedText = 'кроватей';
 
   $('#bedroom-delete-btn').click(function () {
     if (bedroomCounter == 0) {
       bedroomCounter = 0;
+      bedroomText = 'спален';
     } else {
       bedroomCounter -= 1;
-    }
+      if (bedroomCounter == 0) {bedroomText = 'спален'};
+      if (bedroomCounter == 1) {bedroomText = 'спальня'};
+      if (bedroomCounter > 1 && bedroomCounter < 5 ) {bedroomText = 'спальни'};
+      if (bedroomCounter >= 5) {bedroomText = 'спален'};
+      }
     $('#bedroom-counter').html(bedroomCounter);
-    $('.dropdown__data').html(bedroomCounter + ' спальни, ' + bedCounter + ' кровати...');
+    $('.dropdown__data').html(bedroomCounter + ' ' + bedroomText + ' ' + bedCounter + ' ' + bedText + '...');
     if (bedroomCounter == 0) {
       $('#bedroom-delete-btn').css('opacity', '0.38');
     } else {
@@ -34,8 +41,11 @@ function counterRoom() {
   })
   $('#bedroom-add-btn').click(function () {
     bedroomCounter += 1;
+    if (bedroomCounter == 1) {bedroomText = 'спальня'};
+    if (bedroomCounter > 1 && bedroomCounter < 5 ) {bedroomText = 'спальни'};
+    if (bedroomCounter >= 5) {bedroomText = 'спален'};
     $('#bedroom-counter').html(bedroomCounter);
-    $('#dropdown-room__data').html(bedroomCounter + ' спальни, ' + bedCounter + ' кровати...');
+    $('.dropdown__data').html(bedroomCounter + ' ' + bedroomText + ' ' + bedCounter + ' ' + bedText + '...');
     if (bedroomCounter == 0) {
       $('#bedroom-delete-btn').css('opacity', '0.38');
     } else {
@@ -46,11 +56,16 @@ function counterRoom() {
   $('#bed-delete-btn').click(function () {
     if (bedCounter == 0) {
       bedCounter = 0;
+      bedText = 'кроватей';
     } else {
       bedCounter -= 1;
+      if (bedCounter == 0) {bedText = 'кроватей'};
+      if (bedCounter == 1) {bedText = 'кровать'};
+      if (bedCounter > 1 && bedCounter < 5) {bedText = 'кровати'};
+      if (bedCounter >= 5) {bedText = 'кроватей'};
     }
     $('#bed-counter').html(bedCounter);
-    $('#dropdown-room__data').html(bedroomCounter + ' спальни, ' + bedCounter + ' кровати...');
+    $('.dropdown__data').html(bedroomCounter + ' ' + bedroomText + ' ' + bedCounter + ' ' + bedText + '...');
     if (bedCounter == 0) {
       $('#bed-delete-btn').css('opacity', '0.38');
     } else {
@@ -60,7 +75,11 @@ function counterRoom() {
   $('#bed-add-btn').click(function () {
     bedCounter += 1;
     $('#bed-counter').html(bedCounter);
-    $('.dropdown__data').html(bedroomCounter + ' спальни, ' + bedCounter + ' кровати...');
+    if (bedCounter == 0) {bedText = 'кроватей'};
+    if (bedCounter == 1) {bedText = 'кровать'};
+    if (bedCounter > 1 && bedCounter < 5) {bedText = 'кровати'};
+    if (bedCounter >= 5) {bedText = 'кроватей'};
+    $('.dropdown__data').html(bedroomCounter + ' ' + bedroomText + ' ' + bedCounter + ' ' + bedText + '...');
     if (bedCounter == 0) {
       $('#bed-delete-btn').css('opacity', '0.38');
     } else {
