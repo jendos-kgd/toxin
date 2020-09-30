@@ -1,0 +1,30 @@
+@import "../../styles/link-to-root";
+@import "../../styles/reset";
+@import '../../styles/variables';
+@import '../../styles/montserrat';
+
+
+.example {
+  margin: 50px;
+}
+
+.datepicker {
+  width: 320px;
+  height: 360px;
+  font: $mainFont;
+  font-size: 12px;
+  .datepicker--pointer{
+    display: none;
+  }
+  .datepicker--nav-title {
+    font: $fontH2;
+    color: $dark100;
+    i {
+      color: $dark100;
+    }
+  }
+  .datepicker--nav-action path {
+    stroke: $purple;
+    stroke-width: 2px;
+  }
+}
