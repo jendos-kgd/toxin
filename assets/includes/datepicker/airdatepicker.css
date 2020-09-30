@@ -77,6 +77,11 @@ a {
 .datepicker .datepicker--pointer {
   display: none;
 }
+.datepicker .datepicker--nav {
+  border: none;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
 .datepicker .datepicker--nav-title {
   font: normal bold 19px/24px Quicksand, sans-serif;
   color: #1F2041;
