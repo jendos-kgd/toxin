@@ -1,7 +1,3 @@
-// $('.datepicker--nav-action').data('prev') = '<svg><path d="M 17,12 l -5,5 l 5,5 M 12, 17 h -10"></path></svg>'
-
-
-
 
 $('.datepicker-here').datepicker({
   prevHtml: '<svg><path d="M 20,9 l -8,8 l 8,8 M 12, 17 h 16"></path></svg>',
@@ -11,4 +7,10 @@ $('.datepicker-here').datepicker({
     months: 'yyyy',
     years: 'yyyy1 - yyyy2'
   },
+})
+
+// Добавляем фон к началу и концу диапазона дат, чтобы не было белых пробелов в диапазоне.
+$('.datepicker').click(function () {
+  $('.-range-from-').append('<div class="add-bg-range-from"></div>');
+  $('.-range-to-').prepend('<div class="add-bg-range-to"></div>');
 })
