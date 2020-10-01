@@ -89,4 +89,19 @@
       }
     }
   }
+  .datepicker--buttons {
+    border-top: none;
+    padding: 0 20px;
+    font: $fontH3;
+    text-transform: uppercase;
+    flex-direction: row-reverse;
+    .datepicker--button[data-action='today'] {
+      justify-content: flex-end;
+      color: $purple;
+    }
+    .datepicker--button[data-action='clear'] {
+      justify-content: flex-start;
+      color: $dark50;
+    }
+  }
 }

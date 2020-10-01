@@ -7,7 +7,12 @@ $('.datepicker-here').datepicker({
     months: 'yyyy',
     years: 'yyyy1 - yyyy2'
   },
-  minDate: new Date(), // Можно выбрать только даты, идущие за сегодняшним днем, включая сегодня
+  range: 'true',
+  clearButton: 'true',
+  todayButton: 'true',
+  language: {
+    today: 'Применить',
+  },
 
 })
 
@@ -16,3 +21,5 @@ $('.datepicker').click(function () {
   $('.-range-from-').append('<div class="add-bg-range-from"></div>');
   $('.-range-to-').prepend('<div class="add-bg-range-to"></div>');
 })
+
+// Замена кнопки Сегодня на кнопку Применить

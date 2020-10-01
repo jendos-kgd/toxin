@@ -149,5 +149,20 @@ a {
 .datepicker .datepicker--days .datepicker--cells-days .add-bg-range-to {
   left: 0;
 }
+.datepicker .datepicker--buttons {
+  border-top: none;
+  padding: 0 20px;
+  font: normal bold 12px/15px Montserrat, sans-serif;
+  text-transform: uppercase;
+  flex-direction: row-reverse;
+}
+.datepicker .datepicker--buttons .datepicker--button[data-action=today] {
+  justify-content: flex-end;
+  color: #BC9CFF;
+}
+.datepicker .datepicker--buttons .datepicker--button[data-action=clear] {
+  justify-content: flex-start;
+  color: rgba(31, 32, 65, 0.5);
+}
 
 /*# sourceMappingURL=airdatepicker.css.map */
