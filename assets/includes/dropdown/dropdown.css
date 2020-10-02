@@ -84,7 +84,8 @@ a {
 .dropdown input:focus, .dropdown input:hover {
   border-color: rgba(31, 32, 65, 0.5);
 }
-.dropdown #dropdown-room__expand {
+.dropdown #dropdown-room__expand,
+.dropdown #dropdown-guests__expand {
   position: absolute;
   top: 18px;
   right: 15px;
@@ -129,10 +130,10 @@ a {
   line-height: 15px;
   cursor: default;
 }
-.dropdown .dropdown__buttons #dropdown__clear-button {
+.dropdown .dropdown__buttons .dropdown__clear-btn {
   color: rgba(31, 32, 65, 0.5);
 }
-.dropdown .dropdown__buttons #dropdown__apply-button {
+.dropdown .dropdown__buttons .dropdown__apply-btn {
   color: #BC9CFF;
 }
 

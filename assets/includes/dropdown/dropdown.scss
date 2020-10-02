@@ -22,7 +22,8 @@
       border-color: $dark50;
     }
   }
-  #dropdown-room__expand {
+  #dropdown-room__expand,
+  #dropdown-guests__expand {
     position: absolute;
     top: 18px;
     right: 15px;
@@ -67,10 +68,10 @@
       line-height: 15px;
       cursor: default;
     }
-    #dropdown__clear-button {
+    .dropdown__clear-btn {
       color: $dark50;
     }
-    #dropdown__apply-button {
+    .dropdown__apply-btn {
       color: $purple;
     }
   }

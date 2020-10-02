@@ -3,16 +3,33 @@ $(document).ready(function () {
   counterGuests();
 })
 
-
-
 function dropdownMenuGuests() {
+
+  // Функционал по нажатию стрелочки (открытие и закрытие меню)
   $('#dropdown-guests__expand').click(function () {
     if ($('#dropdown-guests__menu').hasClass('hidden')) {
       $('#dropdown-guests__menu').removeClass('hidden');
     } else {
       $('#dropdown-guests__menu').addClass('hidden');
     }
-  })
+  });
+
+  // Функционал по нажатию на input (только открытие меню)
+    $('#dropdown-guests__header').click(function () {
+      if ($('#dropdown-guests__menu').hasClass('hidden')) {
+        $('#dropdown-guests__menu').removeClass('hidden');
+      }
+    });
+
+  // Функционал по нажатию вне меню (закрытие меню)
+    $(document).click(function (e){ // событие клика по странице
+        if (!$("#dropdown-guests__menu").is(e.target) && // если клик сделан не по элементу
+            $("#dropdown-guests__menu").has(e.target).length === 0 && // если клик сделан не по вложенным элементам
+            !$('#dropdown-guests__header').is(e.target) &&  //если клик сделан не по полю input
+            !$('#dropdown-guests__expand').is(e.target)) {   //если клик сделан не по стрелочке
+              $('#dropdown-guests__menu').addClass('hidden'); // скрываем блок
+            }
+    });
 }
 
 
@@ -23,13 +40,13 @@ function counterGuests() {
 
   function addDataGuests() {
     if ((adultCounter + childCounter + babyCounter) == 0) {
-      $('#dropdown-guests__data').html('Сколько гостей');
+      $('#dropdown-guests__header').val('Сколько гостей');
     } if ((adultCounter + childCounter + babyCounter) == 1) {
-      $('#dropdown-guests__data').html('1 гость');
+      $('#dropdown-guests__header').val('1 гость');
     } if ((adultCounter + childCounter + babyCounter) > 1 && (adultCounter + childCounter + babyCounter) <= 4) {
-      $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостя');
+      $('#dropdown-guests__header').val(adultCounter + childCounter + babyCounter + ' гостя');
     } if ((adultCounter + childCounter + babyCounter) > 4) {
-      $('#dropdown-guests__data').html(adultCounter + childCounter + babyCounter + ' гостей');
+      $('#dropdown-guests__header').val(adultCounter + childCounter + babyCounter + ' гостей');
     }
   }
 
@@ -106,5 +123,22 @@ function counterGuests() {
     } else {
       $('#baby-delete-btn').css('opacity', '1');
     }
+  })
+
+  $('#dropdown-guests__clear-button').click(function () {
+    adultCounter = 0;
+    childCounter = 0;
+    babyCounter = 0;
+    $('#adult-counter').html(adultCounter);
+    $('#child-counter').html(childCounter);
+    $('#baby-counter').html(babyCounter);
+    $('#dropdown-guests__header').val('Сколько гостей');
+  })
+
+  $('#dropdown-guests__apply-button').click(function () {
+    $('#dropdown-guests__data').val('взрослые: ' + adultCounter + ' дети:' + childCounter + ' младенцы:' + babyCounter);
+    console.log($('#dropdown-guests__data').val());
+    $('#dropdown-guests__menu').addClass('hidden');
+
   })
 }

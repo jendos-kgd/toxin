@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 function dropdownMenuRoom() {
 
-// Функционал по нажатию стрелочки (открытие и закрытие меню)
+  // Функционал по нажатию стрелочки (открытие и закрытие меню)
   $('#dropdown-room__expand').click(function () {
     if ($('#dropdown-room__menu').hasClass('hidden')) {
       $('#dropdown-room__menu').removeClass('hidden');
@@ -14,21 +14,20 @@ function dropdownMenuRoom() {
     }
   })
 
-// Функционал по нажатию на input (только открытие меню)
+  // Функционал по нажатию на input (только открытие меню)
   $('#dropdown-room__header').click(function () {
     if ($('#dropdown-room__menu').hasClass('hidden')) {
       $('#dropdown-room__menu').removeClass('hidden');
     }
   })
 
-// Функционал по нажатию вне меню (закрытие меню)
+  // Функционал по нажатию вне меню (закрытие меню)
   $(document).click(function (e){ // событие клика по странице
       if (!$("#dropdown-room__menu").is(e.target) && // если клик сделан не по элементу
           $("#dropdown-room__menu").has(e.target).length === 0 && // если клик сделан не по вложенным элементам
           !$('#dropdown-room__header').is(e.target) &&  //если клик сделан не по полю input
           !$('#dropdown-room__expand').is(e.target)) {   //если клик сделан не по стрелочке
             $('#dropdown-room__menu').addClass('hidden'); // скрываем блок
-
           }
   });
 }
@@ -131,7 +130,7 @@ function counterRoom() {
     }
   })
 
-  $('#dropdown__clear-button').click(function () {
+  $('#dropdown-room__clear-button').click(function () {
     bedroomCounter = 0;
     bedCounter = 0;
     bathCounter = 0;
@@ -143,7 +142,7 @@ function counterRoom() {
     $('#dropdown-room__header').val(bedroomCounter + ' ' + bedroomText + ' ' + bedCounter + ' ' + bedText + '...');
   })
 
-  $('#dropdown__apply-button').click(function () {
+  $('#dropdown-room__apply-button').click(function () {
     $('#dropdown-room__data').val('спальни:' + bedroomCounter + ' кровати:' + bedCounter + ' ванные:' + bathCounter);
     $('#dropdown-room__menu').addClass('hidden');
   })

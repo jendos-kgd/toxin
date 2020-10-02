@@ -2,26 +2,31 @@
 <link rel="stylesheet" href="dropdown.css"/>
 <script src="c:/web/toxin/jquery-3.5.1.min.js"></script>
 <script src="c:/web/toxin/assets/includes/dropdown/dropdown-guests.js"></script>
-<div class="dropdown__header">
-  <p class="dropdown__data" id="dropdown-guests__data">Сколько гостей</p><img id="dropdown-guests__expand" src="c:/web/toxin/assets/icons/expand-down.png"/>
-</div>
-<div class="dropdown__menu hidden" id="dropdown-guests__menu"> 
-  <div class="dropdown__line">
-    <p class="dropdown__item">взрослые</p>
-    <div class="dropdown__counter-container"><img id="adult-delete-btn" src="c:/web/toxin/assets/icons/dropdown-delete.png"/>
-      <p class="dropdown__counter" id="adult-counter">0</p><img id="adult-add-btn" src="c:/web/toxin/assets/icons/dropdown-add.png"/>
+<div class="dropdown">
+  <input class="dropdown__input" type="text" placeholder="Сколько гостей" id="dropdown-guests__header"/>
+  <input type="hidden" id="dropdown-guests__data"/><img id="dropdown-guests__expand" src="c:/web/toxin/assets/icons/expand-down.png"/>
+  <div class="dropdown__menu hidden" id="dropdown-guests__menu"> 
+    <div class="dropdown__line">
+      <p class="dropdown__item">взрослые</p>
+      <div class="dropdown__counter-container"><img id="adult-delete-btn" src="c:/web/toxin/assets/icons/dropdown-delete.png"/>
+        <p class="dropdown__counter" id="adult-counter">0</p><img id="adult-add-btn" src="c:/web/toxin/assets/icons/dropdown-add.png"/>
+      </div>
     </div>
-  </div>
-  <div class="dropdown__line">
-    <p class="dropdown__item">дети</p>
-    <div class="dropdown__counter-container"><img id="child-delete-btn" src="c:/web/toxin/assets/icons/dropdown-delete.png"/>
-      <p class="dropdown__counter" id="child-counter">0</p><img id="child-add-btn" src="c:/web/toxin/assets/icons/dropdown-add.png"/>
+    <div class="dropdown__line">
+      <p class="dropdown__item">дети</p>
+      <div class="dropdown__counter-container"><img id="child-delete-btn" src="c:/web/toxin/assets/icons/dropdown-delete.png"/>
+        <p class="dropdown__counter" id="child-counter">0</p><img id="child-add-btn" src="c:/web/toxin/assets/icons/dropdown-add.png"/>
+      </div>
     </div>
-  </div>
-  <div class="dropdown__line">
-    <p class="dropdown__item">младенцы</p>
-    <div class="dropdown__counter-container"><img id="baby-delete-btn" src="c:/web/toxin/assets/icons/dropdown-delete.png"/>
-      <p class="dropdown__counter" id="baby-counter">0</p><img id="baby-add-btn" src="c:/web/toxin/assets/icons/dropdown-add.png"/>
+    <div class="dropdown__line">
+      <p class="dropdown__item">младенцы</p>
+      <div class="dropdown__counter-container"><img id="baby-delete-btn" src="c:/web/toxin/assets/icons/dropdown-delete.png"/>
+        <p class="dropdown__counter" id="baby-counter">0</p><img id="baby-add-btn" src="c:/web/toxin/assets/icons/dropdown-add.png"/>
+      </div>
+    </div>
+    <div class="dropdown__buttons">
+      <p class="dropdown__clear-btn" id="dropdown-guests__clear-button">Очистить</p>
+      <p class="dropdown__apply-btn" id="dropdown-guests__apply-button">Применить</p>
     </div>
   </div>
 </div>
