@@ -4,10 +4,12 @@
 @import '../../styles/montserrat';
 
 
-.example {
-  margin: 50px;
+#endDate {
+  margin-left: 20px;
+  .datepicker {
+  position: left;
+  }
 }
-
 .datepicker {
   width: 320px;
   height: 360px;
@@ -94,8 +96,7 @@
     padding: 0 20px;
     font: $fontH3;
     text-transform: uppercase;
-    flex-direction: row-reverse;
-    .datepicker--button[data-action='today'] {
+    .datepicker--button[data-action='hide'] {
       justify-content: flex-end;
       color: $purple;
     }

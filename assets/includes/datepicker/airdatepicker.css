@@ -64,8 +64,11 @@ a {
   font-style: normal;
   font-weight: bold;
 }
-.example {
-  margin: 50px;
+#endDate {
+  margin-left: 20px;
+}
+#endDate .datepicker {
+  position: left;
 }
 
 .datepicker {
@@ -154,9 +157,8 @@ a {
   padding: 0 20px;
   font: normal bold 12px/15px Montserrat, sans-serif;
   text-transform: uppercase;
-  flex-direction: row-reverse;
 }
-.datepicker .datepicker--buttons .datepicker--button[data-action=today] {
+.datepicker .datepicker--buttons .datepicker--button[data-action=hide] {
   justify-content: flex-end;
   color: #BC9CFF;
 }

@@ -64,6 +64,10 @@ a {
   font-style: normal;
   font-weight: bold;
 }
+.dropdown_short {
+  width: 150px;
+}
+
 .dropdown__header {
   position: relative;
   width: 266px;
