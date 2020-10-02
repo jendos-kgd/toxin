@@ -3,25 +3,31 @@ link(rel="stylesheet" href="dropdown.css")
 include ../root-link.pug
 script(src= rootLink + "/jquery-3.5.1.min.js")
 script(src= rootLink + "/assets/includes/dropdown/dropdown-room.js")
-.dropdown__header
-  p.dropdown__data#dropdown-room__data 0 спален, 0 кроватей...
+
+.dropdown
+  input(type="text" placeholder="0 спален, 0 кроватей..." id="dropdown-room__header").dropdown__input
+  input(type="hidden", id="dropdown-room__data")
   img#dropdown-room__expand(src= rootLink + '/assets/icons/expand-down.png')
-.dropdown__menu.hidden#dropdown-room__menu 
-  .dropdown__line
-    p.dropdown__item спальни
-    .dropdown__counter-container
-      img#bedroom-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
-      p.dropdown__counter#bedroom-counter 0
-      img#bedroom-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
-  .dropdown__line
-    p.dropdown__item кровати
-    .dropdown__counter-container
-      img#bed-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
-      p.dropdown__counter#bed-counter 0
-      img#bed-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
-  .dropdown__line
-    p.dropdown__item ванные комнаты
-    .dropdown__counter-container
-      img#bath-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
-      p.dropdown__counter#bath-counter 0
-      img#bath-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
+  .dropdown__menu.hidden#dropdown-room__menu 
+    .dropdown__line
+      p.dropdown__item спальни
+      .dropdown__counter-container
+        img#bedroom-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
+        p.dropdown__counter#bedroom-counter 0
+        img#bedroom-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
+    .dropdown__line
+      p.dropdown__item кровати
+      .dropdown__counter-container
+        img#bed-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
+        p.dropdown__counter#bed-counter 0
+        img#bed-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
+    .dropdown__line
+      p.dropdown__item ванные комнаты
+      .dropdown__counter-container
+        img#bath-delete-btn(src= rootLink + '/assets/icons/dropdown-delete.png')
+        p.dropdown__counter#bath-counter 0
+        img#bath-add-btn(src= rootLink + '/assets/icons/dropdown-add.png')
+    .dropdown__buttons
+      p#dropdown__clear-button Очистить
+      p#dropdown__apply-button Применить
+        

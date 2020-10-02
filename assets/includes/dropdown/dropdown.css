@@ -64,36 +64,34 @@ a {
   font-style: normal;
   font-weight: bold;
 }
-.dropdown_short {
-  width: 150px;
-}
-
-.dropdown__header {
+.dropdown {
   position: relative;
-  width: 266px;
+  width: 320px;
+  margin: 100px;
+}
+.dropdown input {
+  width: 100%;
   height: 44px;
   padding-left: 15px;
-  padding-top: 12px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  line-height: 24px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  line-height: 44px;
+  border-radius: 2px;
   border: 1px solid rgba(31, 32, 65, 0.25);
+  outline: none;
   color: rgba(31, 32, 65, 0.75);
 }
-.dropdown__header:focus, .dropdown__header:hover {
+.dropdown input:focus, .dropdown input:hover {
   border-color: rgba(31, 32, 65, 0.5);
 }
-.dropdown__header img {
+.dropdown #dropdown-room__expand {
   position: absolute;
+  top: 18px;
   right: 15px;
-  top: 50%;
 }
-
-.dropdown__menu {
-  width: 266px;
-  height: 119px;
+.dropdown .dropdown__menu {
+  width: 320px;
+  height: 160px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -102,23 +100,40 @@ a {
   top: -1px;
   padding-top: 7px;
 }
-.dropdown__menu p {
+.dropdown .dropdown__menu p {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: bold;
   line-height: 30px;
   color: #1F2041;
 }
-.dropdown__menu .dropdown__line {
+.dropdown .dropdown__menu .dropdown__line {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin: 0px 7px 7px 15px;
 }
-.dropdown__menu .dropdown__counter-container {
+.dropdown .dropdown__menu .dropdown__counter-container {
   width: 92px;
   display: flex;
   justify-content: space-between;
+}
+.dropdown .dropdown__buttons {
+  margin: 20px 7px 0px 14px;
+  max-height: 15px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown .dropdown__buttons p {
+  line-height: 15px;
+  cursor: default;
+}
+.dropdown .dropdown__buttons #dropdown__clear-button {
+  color: rgba(31, 32, 65, 0.5);
+}
+.dropdown .dropdown__buttons #dropdown__apply-button {
+  color: #BC9CFF;
 }
 
 #bedroom-delete-btn,
@@ -128,6 +143,10 @@ a {
 #child-delete-btn,
 #baby-delete-btn {
   opacity: 0.38;
+}
+
+.dropdown_short {
+  width: 150px;
 }
 
 /*# sourceMappingURL=dropdown.css.map */

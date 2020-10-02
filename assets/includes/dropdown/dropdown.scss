@@ -3,61 +3,79 @@
 @import '../../styles/variables';
 @import '../../styles/montserrat';
 
-.dropdown_short {
-  width: 150px;
-}
-.dropdown__header {
+.dropdown {
   position: relative;
-  width: 266px;
-  height: 44px;
-  padding-left: 15px;
-  padding-top: 12px;
-  font-family: $mainFont;
-  font-size: 14px;
-  line-height: 24px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border: 1px solid $dark25;
-  color: $dark75;
-  &:focus, &:hover {
-    border-color: $dark50;
-  }
-  img {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-  }
-}
-.dropdown__menu {
-  width: 266px;
-  height: 119px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border: 1px solid $dark25;
-  border-top: none;
-  position: relative;
-  top: -1px;
-  padding-top: 7px;
-  p {
+  width: 320px;
+  margin: 100px; // временно
+  input {
+    width: 100%;
+    height: 44px;
+    padding-left: 15px;
     font-family: $mainFont;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 30px;
-    color: $dark100;
+    font-size: 14px;
+    line-height: 44px;
+    border-radius: 2px;
+    border: 1px solid $dark25;
+    outline: none;
+    color: $dark75;
+    &:focus, &:hover {
+      border-color: $dark50;
+    }
   }
-  .dropdown__line {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0px 7px 7px 15px;
+  #dropdown-room__expand {
+    position: absolute;
+    top: 18px;
+    right: 15px;
   }
-  .dropdown__counter-container {
-    width: 92px;
-    display: flex;
-    justify-content: space-between;
+  .dropdown__menu {
+    width: 320px;
+    height: 160px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: 1px solid $dark25;
+    border-top: none;
+    position: relative;
+    top: -1px;
+    padding-top: 7px;
+    p {
+      font-family: $mainFont;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 30px;
+      color: $dark100;
+    }
+    .dropdown__line {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin: 0px 7px 7px 15px;
+    }
+    .dropdown__counter-container {
+      width: 92px;
+      display: flex;
+      justify-content: space-between;
 
+    }
+  }
+  .dropdown__buttons {
+    margin: 20px 7px 0px 14px;
+    max-height: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    p {
+      line-height: 15px;
+      cursor: default;
+    }
+    #dropdown__clear-button {
+      color: $dark50;
+    }
+    #dropdown__apply-button {
+      color: $purple;
+    }
   }
 }
+
 
 #bedroom-delete-btn,
 #bed-delete-btn,
@@ -66,4 +84,8 @@
 #child-delete-btn,
 #baby-delete-btn {
   opacity: 0.38;
+}
+
+.dropdown_short {
+  width: 150px;
 }
