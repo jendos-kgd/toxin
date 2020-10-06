@@ -1,7 +1,7 @@
 
 $('.datepicker-here').datepicker({
-  prevHtml: '<svg><path d="M 20,9 l -8,8 l 8,8 M 12, 17 h 16"></path></svg>',  // Рисуем правую стрелку
-  nextHtml: '<svg><path d="M 12,9 l 8,8 l -8,8 M 19, 17 h -16"></path></svg>', // Рисуем левую стрелку
+  prevHtml: '<svg><path d="M 20,9 l -8,8 l 8,8 M 12, 17 h 16"></path></svg>',  // Рисуем левую стрелку
+  nextHtml: '<svg><path d="M 12,9 l 8,8 l -8,8 M 19, 17 h -16"></path></svg>', // Рисуем правую стрелку
   navTitles: {
     days: 'MM <i>yyyy</i>', // Убрали запятую после месяца в заголовке календаря
     months: 'yyyy',
@@ -13,7 +13,7 @@ $('.datepicker-here').datepicker({
         if (formattedDate.length > 1) { //если в массиве дат больше 1 даты
           $('#startDate').val(formattedDate.split(",")[0]);  //в первый инпут заносим первую дату
           $('#endDate').val(formattedDate.split(",")[1]);    //во второй инпут - вторую дату
-          this.selectedDates = formattedDate;                
+          this.selectedDates = formattedDate;
         }
       }
 })

@@ -64,11 +64,10 @@ a {
   font-style: normal;
   font-weight: bold;
 }
-#endDate {
-  margin-left: 20px;
-}
-#endDate .datepicker {
-  position: left;
+.dropdown__container {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
 }
 
 .datepicker {
@@ -167,4 +166,4 @@ a {
   color: rgba(31, 32, 65, 0.5);
 }
 
-/*# sourceMappingURL=airdatepicker.css.map */
+/*# sourceMappingURL=datepicker__two-dates.css.map */

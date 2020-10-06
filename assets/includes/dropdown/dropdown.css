@@ -67,7 +67,6 @@ a {
 .dropdown {
   position: relative;
   width: 320px;
-  margin: 100px;
 }
 .dropdown input {
   width: 100%;
@@ -84,8 +83,7 @@ a {
 .dropdown input:focus, .dropdown input:hover {
   border-color: rgba(31, 32, 65, 0.5);
 }
-.dropdown #dropdown-room__expand,
-.dropdown #dropdown-guests__expand {
+.dropdown .dropdown__expand-button {
   position: absolute;
   top: 18px;
   right: 15px;
@@ -144,6 +142,10 @@ a {
 #child-delete-btn,
 #baby-delete-btn {
   opacity: 0.38;
+}
+
+.dropdown_middle {
+  width: 266px;
 }
 
 .dropdown_short {

@@ -6,7 +6,6 @@
 .dropdown {
   position: relative;
   width: 320px;
-  margin: 100px; // временно
   input {
     width: 100%;
     height: 44px;
@@ -22,8 +21,7 @@
       border-color: $dark50;
     }
   }
-  #dropdown-room__expand,
-  #dropdown-guests__expand {
+  .dropdown__expand-button {
     position: absolute;
     top: 18px;
     right: 15px;
@@ -86,7 +84,9 @@
 #baby-delete-btn {
   opacity: 0.38;
 }
-
+.dropdown_middle {
+  width: 266px;
+}
 .dropdown_short {
   width: 150px;
 }
