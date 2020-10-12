@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Regular.woff"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Regular.ttf"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Regular.svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Bold.woff"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Bold.ttf"), url("c:/web/toxin/assets/fonts/Montserrat/Montserrat-Bold.svg");
+  font-style: normal;
+  font-weight: bold;
+}
+.dropdown__container {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.datepicker {
+  width: 320px;
+  height: 360px;
+  font: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.datepicker .datepicker--pointer {
+  display: none;
+}
+.datepicker .datepicker--nav {
+  border: none;
+  padding: 20px 0 0 0;
+  margin-bottom: 30px;
+}
+.datepicker .datepicker--nav .datepicker--nav-title {
+  font: normal bold 19px/24px Quicksand, sans-serif;
+  color: #1F2041;
+}
+.datepicker .datepicker--nav .datepicker--nav-title i {
+  color: #1F2041;
+}
+.datepicker .datepicker--nav .datepicker--nav-action path {
+  stroke: #BC9CFF;
+  stroke-width: 2px;
+}
+.datepicker .datepicker--content {
+  padding: 0;
+}
+.datepicker .datepicker--days {
+  font: normal bold 12px/15px Montserrat, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.datepicker .datepicker--days .datepicker--cell-day,
+.datepicker .datepicker--days .datepicker--day-name {
+  max-width: 40px;
+  height: 40px;
+}
+.datepicker .datepicker--days .datepicker--day-name {
+  color: #BC9CFF;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.datepicker .datepicker--days .datepicker--cells-days {
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+}
+.datepicker .datepicker--days .datepicker--cells-days .-other-month- {
+  color: rgba(31, 32, 65, 0.25);
+}
+.datepicker .datepicker--days .datepicker--cells-days .-current- {
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+}
+.datepicker .datepicker--days .datepicker--cells-days .-selected- {
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.datepicker .datepicker--days .datepicker--cells-days .-in-range- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+}
+.datepicker .datepicker--days .datepicker--cells-days .add-bg-range-from,
+.datepicker .datepicker--days .datepicker--cells-days .add-bg-range-to {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+  z-index: -1;
+}
+.datepicker .datepicker--days .datepicker--cells-days .add-bg-range-from {
+  right: 0;
+}
+.datepicker .datepicker--days .datepicker--cells-days .add-bg-range-to {
+  left: 0;
+}
+.datepicker .datepicker--buttons {
+  border-top: none;
+  padding: 0 20px;
+  font: normal bold 12px/15px Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+.datepicker .datepicker--buttons .datepicker--button[data-action=hide] {
+  justify-content: flex-end;
+  color: #BC9CFF;
+}
+.datepicker .datepicker--buttons .datepicker--button[data-action=clear] {
+  justify-content: flex-start;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*# sourceMappingURL=datepicker__range-dates.css.map */

@@ -1,0 +1,19 @@
+include ../../root-link
+
+
+html
+  head
+    meta(charset='utf-8')
+    link(rel="stylesheet" href=rootLink + "/node_modules/air-datepicker/dist/css/datepicker.min.css")
+    link(rel="stylesheet" href="datepicker__range-dates.css")
+    link(rel="stylesheet" href="../../dropdown/dropdown.css")
+    script(src=rootLink + '/jquery-3.5.1.min.js')
+    script(src=rootLink + '/node_modules/air-datepicker/dist/js/datepicker.js')
+
+  body
+    .dropdown__container
+      .dropdown.dropdown_middle
+        input(type="text" placeholder="Даты пребывания" id="rangeDate").datepicker-here
+        img.dropdown__expand-button(src= rootLink + '/assets/icons/expand-down.png')
+
+    script(src="datepicker__range-dates.js")
