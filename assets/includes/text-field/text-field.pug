@@ -3,7 +3,13 @@ link(rel="stylesheet", href="text-field.css")
 mixin text-field(type, placeholder)
   form(action="#")
     input(type=type class="text-field" placeholder=placeholder)
+      
+mixin subscription(type, placeholder)
+  form(action="#" class="subscription")
+    input(type=type class="text-field text-field_middle" placeholder=placeholder)
+    button#subscription__send
 
 
 //- +text-field('email', 'Email')
 //- +text-field('text', 'some text')
+//- +subscription('email', 'Email')

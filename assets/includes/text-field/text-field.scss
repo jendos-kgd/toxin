@@ -26,3 +26,21 @@
 .text-field_short {
   width: 150px;
 }
+.text-field_middle {
+  width: 266px;
+}
+.subscription {
+  position: relative;
+  display: block;
+  width: 266px;
+}
+#subscription__send {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  background:transparent url('../../icons/arrow-forward.png') no-repeat center;
+  border: none;
+  outline: none;
+  padding: 0;
+}
